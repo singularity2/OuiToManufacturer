@@ -1,6 +1,7 @@
 # OuiToManufacturer
 
 Install:
+
 1. download and unpack zip
 1. in Chrome browser, click hamburger icon -> Settings
 1. selecte 'Extensions'
