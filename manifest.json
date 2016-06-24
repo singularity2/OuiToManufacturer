@@ -1,10 +1,11 @@
 {
-  "name": "MAC To OUI",
-  "description": "Convert Ethernet MACs to OUIs",
+  "name": "OUI to Manufacturer",
+  "description": "Convert Ethernet MAC OUIs to Manufacturer",
   "manifest_version": 2,
-  "version": "0.1",
-  "icons": { "128": "img/logo.png",
-     "16": "img/logo.png"
+  "version": "0.0.0.1",
+  "icons": {
+    "128": "img/factory-128.png",
+    "16": "img/factory-24.png"
   },
   "content_scripts": [ {
     "matches": [
@@ -21,8 +22,11 @@
   },
   "browser_action": {
     "default_icon": { 
-      "19": "img/logo.png",
-      "38": "img/logo.png" 
+      "19": "img/factory-24.png",
+      "38": "img/factory-64.png", 
+      "16": "img/factory-24.png", 
+      "48": "img/factory-64.png", 
+      "128": "img/factory-128.png" 
     },
     "default_title": "MAC to OUI"
   },

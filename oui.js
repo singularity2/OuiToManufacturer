@@ -22144,8 +22144,16 @@ this.macWithManu = function(mac) {
                 manu = "RANDOM"; // technically LOCAL
             } else if (0x1 & nibble2) {
                 manu = "MCAST"; // technically LOCAL
+		// let's try removing the bit and looking up again
+		mac &= ~0x1;
+        	manu = o[mac.substring(0,8)];
+		if (manu) {
+                	manu = "#" + manu; // start with special char to show mcast bit was set
+		} else {
+                	manu = "MCAST";
+		}
             } else {
-                manu = "UNKNOWN"; // technically LOCAL
+                manu = "UNKNOWN";
             }
         }
 
